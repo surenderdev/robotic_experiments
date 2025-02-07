@@ -20,6 +20,7 @@ python experiment1.py
 Moving Object1:
 <br />
 # Your Project Title
+[Watch the video](https://github.com/surenderdev/robotic_experiments/blob/main/ball2_robot_animation.mp4)
 
 <video width="640" height="480" controls>
   <source src="https://github.com/surenderdev/robotic_experiments/blob/main/ball2_robot_animation.mp4" type="video/mp4">
