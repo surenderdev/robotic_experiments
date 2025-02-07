@@ -18,19 +18,12 @@ python experiment1.py
 
 
 Moving Object1:
-<br />
-# Your Project Title
-[Watch the video](https://github.com/surenderdev/robotic_experiments/blob/main/ball2_robot_animation.mp4)
-
-<video width="640" height="480" controls>
-  <source src="https://github.com/surenderdev/robotic_experiments/blob/main/ball2_robot_animation.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 
 Moving Object2:
 <br />
-<video src="ball2_robot_animation.mp4" width="320" height="240" controls></video>
+[![Watch the video](robotthumbnail.jpg)](https://vimeo.com/1054422380/f5b545434e)
+
 
 Moving Object2 with Object1 in fixed location:
 <br />
