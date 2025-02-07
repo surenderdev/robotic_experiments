@@ -17,23 +17,18 @@ python experiment1.py
 ```
 
 
-Moving Object1:
-# Your Project Title
-
-<video width="640" height="480" controls>
-  <source src="[https://vimeo.com/1054422380/f5b545434e]" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
-Moving Object2:
+Moving Object1: Click on the image to play.
 <br />
 [![Watch the video](robotthumbnail.jpg)](https://vimeo.com/1054422380/f5b545434e)
 
-
-Moving Object2 with Object1 in fixed location:
+Moving Object2: Click on the image to play.
 <br />
-<video controls src="ball2_ball1fixed_robot_animation.mp4" title="Title"></video>
+[![Watch the video](robotthumbnail.jpg)](https://vimeo.com/1054422503/628fc29ca2)
+
+
+Moving Object2 with Object1 in fixed location: Click on the image to play.
+<br />
+[![Watch the video](robotthumbnail.jpg)](https://vimeo.com/1054422431/b0bcd8bd93)
 
 
 ## Summary
