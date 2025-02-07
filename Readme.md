@@ -48,7 +48,7 @@ Move specified object (ball) to the defined target position (on top of bench).
 Capture the movement from beginning to end as a video file.
 
 ----------
-### Step 1: Setup YOLO, PyBullet, Visual Shape, Robot Base, and Video Writer
+### Step 1: Setup YOLO, PyBullet, Objects, and Video Writer
 Connect to PyBullet: Connect to PyBullet and set initial conditions.
 Initialize the object detection model with predefined classes. 
 Configure Video Writer: Set up the video writer to save needed frames in an MP4 file.
