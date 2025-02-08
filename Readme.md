@@ -62,14 +62,14 @@ I have noticed even a small movement in the scene is making entire scene unstabl
 The ball's movement is broken into four distinct phases: lifting vertically, moving horizontally, lowering to the target, and allowing moved object to settle. This step-by-step approach ensured smooth and controlled movements.
  ##### Phase 1: Lift Vertically: The ball is lifted vertically to avoid collisions. 
  ##### Phase 2: Move Horizontally: The ball is moved horizontally while maintaining a consistent height to avoid unintentional contact with other objects.
-##### Phase 3: Lower to Target: The ball is lowered to the target position gently to prevent it from bouncing upon reaching the target height.
-##### Phase 4: Allow Settling: Additional simulation steps are run to allow the ball to settle and ensure there is stability in the final position of object placement.
+ ##### Phase 3: Lower to Target: The ball is lowered to the target position gently to prevent it from bouncing upon reaching the target height.
+ ##### Phase 4: Allow Settling: Additional simulation steps are run to allow the ball to settle and ensure there is stability in the final position of object placement.
 
 ```bash
 python experiment2.py
 ```
 
-## Experiment2: Object Detection and Movement
+## Experiment2: Robot Arm Detailing 
 
 #### Simulation of KUKA iiwa Robot Arm in PyBullet
 This experiment involves simulating the movements of a KUKA iiwa robot arm using the PyBullet physics engine. The goal is to explore and document the robot's range of motion by moving its joints individually and in various combinations. Output images and animated GIFs are created to visually represent these movements, providing insights into the robot's locomotice capabilities and joint limits.
