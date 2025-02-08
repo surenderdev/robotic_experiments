@@ -2,6 +2,11 @@
 
 #### Author [@surendervarma](https://www.github.com/surenderdev)
 
+## Two Demo Experiments
+
+## Experiment1: Object Detection and Movement
+## Experiment2: Robot Arm Detailing 
+
 
 #### Installation
 
@@ -9,13 +14,11 @@
 pip install -r requirements.txt
 ```
     
-#### Demo
-
+## Experiment1: Object Detection and Movement
 
 ```bash
 python experiment1.py
 ```
-
 
 Moving Object1: Click on the image to play.
 <br />
@@ -25,20 +28,14 @@ Moving Object2: Click on the image to play.
 <br />
 [![Watch the video](robotthumbnail.jpg)](https://vimeo.com/1054422503/628fc29ca2)
 
-
 Moving Object2 with Object1 in fixed location: Click on the image to play.
 <br />
 [![Watch the video](robotthumbnail.jpg)](https://vimeo.com/1054422431/b0bcd8bd93)
 
-
-## Experiment1: Object Detection and Movement
-
 #### 1.	Set up Simulation Environment:
-
 Configure PyBullet and load simulation objects 
 
 #### 2.	Perform Object Detection:
-
 Utilize YOLO to detect and annotate objects (robot, bench, ball) in the simulated environment.
 
 #### 3.	Move Desired Object to Target Position:
@@ -65,12 +62,11 @@ The ball's movement is broken into four distinct phases: lifting vertically, mov
  ##### Phase 3: Lower to Target: The ball is lowered to the target position gently to prevent it from bouncing upon reaching the target height.
  ##### Phase 4: Allow Settling: Additional simulation steps are run to allow the ball to settle and ensure there is stability in the final position of object placement.
 
+
+## Experiment2: Robot Arm Detailing 
 ```bash
 python experiment2.py
 ```
-
-## Experiment2: Robot Arm Detailing 
-
 #### Simulation of KUKA iiwa Robot Arm in PyBullet
 This experiment involves simulating the movements of a KUKA iiwa robot arm using the PyBullet physics engine. The goal is to explore and document the robot's range of motion by moving its joints individually and in various combinations. Output images and animated GIFs are created to visually represent these movements, providing insights into the robot's locomotice capabilities and joint limits.
 
