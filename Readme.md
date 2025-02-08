@@ -31,7 +31,7 @@ Moving Object2 with Object1 in fixed location: Click on the image to play.
 [![Watch the video](robotthumbnail.jpg)](https://vimeo.com/1054422431/b0bcd8bd93)
 
 
-## Summary
+## Experiment1: Object Detection and Movement
 
 #### 1.	Set up Simulation Environment:
 
@@ -64,6 +64,33 @@ The ball's movement is broken into four distinct phases: lifting vertically, mov
  ##### Phase 2: Move Horizontally: The ball is moved horizontally while maintaining a consistent height to avoid unintentional contact with other objects.
 ##### Phase 3: Lower to Target: The ball is lowered to the target position gently to prevent it from bouncing upon reaching the target height.
 ##### Phase 4: Allow Settling: Additional simulation steps are run to allow the ball to settle and ensure there is stability in the final position of object placement.
+
+```bash
+python experiment2.py
+```
+
+## Experiment2: Object Detection and Movement
+
+#### Simulation of KUKA iiwa Robot Arm in PyBullet
+This experiment involves simulating the movements of a KUKA iiwa robot arm using the PyBullet physics engine. The goal is to explore and document the robot's range of motion by moving its joints individually and in various combinations. Output images and animated GIFs are created to visually represent these movements, providing insights into the robot's locomotice capabilities and joint limits.
+
+#### Experiments Conducted
+Single Link Movement: Each joint is moved individually across its entire range, with images captured at each position and compiled into GIFs.
+
+#### Multi-Link Movements:
+
+#### Two-Link Combinations: 
+Pairs of joints are moved simultaneously, capturing their combined movements in images and GIFs.
+
+#### Three-Link Combinations: 
+Groups of three joints are moved together, with images and GIFs documenting their coordinated motions.
+
+#### Four-Link Combinations and Beyond: 
+Larger groups of joints are moved together, generating comprehensive visual records of their combined movements.
+
+#### This approach provides a thorough and visual documentation of the robot's joint movements, helping to understand its mechanical capabilities and limitations.
+
+
 
 
 ## Acknowledgements
