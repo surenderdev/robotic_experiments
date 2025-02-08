@@ -75,21 +75,13 @@ python experiment2.py
 This experiment involves simulating the movements of a KUKA iiwa robot arm using the PyBullet physics engine. The goal is to explore and document the robot's range of motion by moving its joints individually and in various combinations. Output images and animated GIFs are created to visually represent these movements, providing insights into the robot's locomotice capabilities and joint limits.
 
 #### Experiments Conducted
-Single Link Movement: Each joint is moved individually across its entire range, with images captured at each position and compiled into GIFs.
+#### Single Link Movement: 
+Each joint is moved individually across its entire range, with images captured at each position and compiled into GIFs.
 
-#### Multi-Link Movements:
+#### Multi-Link Movements: 
+Groups (2,3, 4 etc) of joints are moved simultaneously, capturing their combined movements in images and GIFs.
 
-#### Two-Link Combinations: 
-Pairs of joints are moved simultaneously, capturing their combined movements in images and GIFs.
-
-#### Three-Link Combinations: 
-Groups of three joints are moved together, with images and GIFs documenting their coordinated motions.
-
-#### Four-Link Combinations and Beyond: 
-Larger groups of joints are moved together, generating comprehensive visual records of their combined movements.
-
-#### This approach provides a thorough and visual documentation of the robot's joint movements, helping to understand its mechanical capabilities and limitations.
-
+#### This approach provides a thorough visual documentation of the robot's joint movements, helping to understand its mechanical capabilities and limitations.
 
 
 
