@@ -76,7 +76,7 @@ Groups (2,3, 4 etc) of joints are moved simultaneously, capturing their combined
 ## Experiment3: Training Robot Arm to Reach Defined Object using DQN 
 
 ```bash
-pip install -r experiment3_rl_dqn.txt
+python experiment3_rl_dqn.py
 ```
 #### Purpose: The code aims to train a Deep Q-Network (DQN) for making robotic reach a definedd object .
 
