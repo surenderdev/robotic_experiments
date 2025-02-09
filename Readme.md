@@ -9,7 +9,6 @@
 ## Experiment3: Training Robot Arm to Reach Defined Object using DQN 
  
 ## Experiment1: Object Detection and Movement
-
 ```bash
 python experiment1.py
 ```
