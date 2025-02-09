@@ -55,6 +55,7 @@ The ball's movement is broken into four distinct phases: lifting vertically, mov
  ##### Phase 3: Lower to Target: The ball is lowered to the target position gently to prevent it from bouncing upon reaching the target height.
  ##### Phase 4: Allow Settling: Additional simulation steps are run to allow the ball to settle and ensure there is stability in the final position of object placement.
 
+-------------------------------------------------------------------------------
 
 ## Experiment2: Robot Arm Detailing 
 ```bash
@@ -71,6 +72,8 @@ Each joint is moved individually across its entire range, with images captured a
 Groups (2,3, 4 etc) of joints are moved simultaneously, capturing their combined movements in images and GIFs.
 
 #### This approach provides a thorough visual documentation of the robot's joint movements, helping to understand its mechanical capabilities and limitations.
+
+-------------------------------------------------------------------------------
 
 ## Experiment3: Training Robot Arm to Reach Defined Object using DQN 
 
@@ -133,6 +136,7 @@ Saves training videos and model checkpoints at regular intervals and upon achiev
 
 This structure helps efficiently train the DQN for the robotic arm, ensuring that the robot optimizes its actions within the simulated environment.
 
+-------------------------------------------------------------------------------
 
 ## Acknowledgements
 
