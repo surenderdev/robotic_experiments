@@ -2,18 +2,12 @@
 
 #### Author [@surendervarma](https://www.github.com/surenderdev)
 
-# Two Demo Experiments
+# Three Demo Experiments
 
 ## Experiment1: Object Detection and Movement
-## Experiment2: Robot Arm Detailing 
-
-
-#### Installation
-
-```bash
-pip install -r requirements.txt
-```
-    
+## Experiment2: Robot Arm Detailing
+## Experiment3: Training Robot Arm to Reach Defined Object using DQN 
+ 
 ## Experiment1: Object Detection and Movement
 
 ```bash
@@ -79,6 +73,62 @@ Groups (2,3, 4 etc) of joints are moved simultaneously, capturing their combined
 
 #### This approach provides a thorough visual documentation of the robot's joint movements, helping to understand its mechanical capabilities and limitations.
 
+## Experiment3: Training Robot Arm to Reach Defined Object using DQN 
+
+```bash
+pip install -r experiment3_rl_dqn.txt
+```
+#### Purpose: The code aims to train a Deep Q-Network (DQN) for making robotic reach a definedd object .
+
+#### DQN Configuration:
+
+Episodes: 300 training episodes.
+
+Gamma (Discount Factor): 0.80.
+
+Epsilon (Exploration Rate): Starts at 0.65 and decays to a minimum of 0.01.
+
+Batch Size: 32.
+
+Memory Size: 3000.
+
+RobotEnv Class:
+
+#### Initialization: Sets up the robotic arm, loads URDF models, defines action and observation spaces, and sets camera parameters.
+
+#### Step Function: Executes the action in the simulation, updates the robot's state, calculates the distance to the target object, captures camera images for video recording, and computes the reward and termination condition.
+
+#### Reset Function: Resets the simulation environment to the initial state.
+
+#### Neural Network Model:
+
+Defined using TensorFlow's Keras API.
+
+Three layers: two hidden layers with 24 neurons each (using ReLU activation) and an output layer with linear activation.
+
+Compiled with Mean Squared Error (MSE) loss and the Adam optimizer.
+
+#### Training Process (train_dqn function):
+
+Initializes the RobotEnv environment and neural network model.
+
+Handles action selection using an epsilon-greedy strategy (exploration vs. exploitation).
+
+Stores experience tuples (state, action, reward, next_state, done) in memory.
+
+Samples mini-batches from memory for training when sufficient experiences are collected.
+
+Calculates Q-values and updates the model using the loss function.
+
+Saves the best-performing model based on the loss and records training progress videos.
+
+Gradually decays the epsilon value to reduce exploration over time.
+
+#### Video and Model Saving:
+
+Saves training videos and model checkpoints at regular intervals and upon achieving improved performance.
+
+This structure helps efficiently train the DQN for the robotic arm, ensuring that the robot optimizes its actions within the simulated environment.
 
 
 ## Acknowledgements
