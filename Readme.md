@@ -78,6 +78,10 @@ Groups (2,3, 4 etc) of joints are moved simultaneously, capturing their combined
 ```bash
 python experiment3_rl_dqn.py
 ```
+Trained robotic arm with DQN for moving its arm to reach out an object (sphere)
+<br />
+[![Watch the video](robotthumbnail.jpg)](https://vimeo.com/1054906047/7960f6e34e)
+
 #### Purpose: The code aims to train a Deep Q-Network (DQN) for making robotic reach a definedd object .
 
 #### DQN Configuration:
