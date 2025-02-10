@@ -1,4 +1,8 @@
+gym==0.26.2
 numpy==2.2.2
+Pillow==11.1.0
 pybullet==3.2.5
+tensorflow==2.18.0
+tensorflow_intel==2.18.0
 ultralytics==8.3.68
-opencv-python==4.7.0.72
+opencv-python
