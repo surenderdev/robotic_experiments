@@ -84,7 +84,7 @@ Trained robotic arm with DQN: Click on the image to play.
 <br />
 [![Watch the video](rl_dqn_training_thumbnail.jpg)](https://vimeo.com/1054906047/7960f6e34e)
 
-#### Purpose: The code aims to train a Deep Q-Network (DQN) for making robotic reach a definedd object .
+#### Purpose: The code aims to train a Deep Q-Network (DQN) for making robotic arm move to reach a target object.
 
 #### DQN Configuration:
 
