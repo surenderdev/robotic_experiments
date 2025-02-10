@@ -34,6 +34,7 @@ def move_joint(robot_id, joint_index, target_position):
     time.sleep(0.1)
 
 def capture_image(img_folder, img_prefix, target_position):
+    os.makedirs(img_folder, exist_ok=True)  # Ensure directory exists
     width, height, img, _, _ = p.getCameraImage(640, 480)
     img = Image.fromarray(img)
     img.save(os.path.join(img_folder, f"{img_prefix}_{target_position}.png"))
@@ -42,14 +43,24 @@ def create_gif(img_folder, img_prefix, output_file):
     images = [Image.open(os.path.join(img_folder, file)) for file in sorted(os.listdir(img_folder)) if file.startswith(img_prefix)]
     images[0].save(output_file, save_all=True, append_images=images[1:], duration=100, loop=0)
 
+def reset_robot(robot_id, initial_position=0):
+    # Reset each joint to the initial position
+    num_joints = p.getNumJoints(robot_id)
+    for i in range(num_joints):
+        p.resetJointState(robot_id, i, initial_position)
+    p.stepSimulation()
+
 def simulate_joint_movement(robot_id, joint_index, limits, img_folder, gif_folder, img_prefix):
     os.makedirs(img_folder, exist_ok=True)
     for position in np.linspace(limits[0], limits[1], num=20):
+        reset_robot(robot_id)  # Reset robot before moving the joint
         move_joint(robot_id, joint_index, position)
         capture_image(img_folder, img_prefix, position)
     create_gif(img_folder, img_prefix, os.path.join(gif_folder, f"{img_prefix}.gif"))
 
 def move_multiple_joints_and_capture(robot_id, joint_indices, target_positions, img_folder, img_prefix):
+    os.makedirs(img_folder, exist_ok=True)  # Ensure directory exists
+    reset_robot(robot_id)  # Reset robot before moving the joints
     for idx, joint_index in enumerate(joint_indices):
         p.setJointMotorControl2(robot_id, joint_index, p.POSITION_CONTROL, targetPosition=target_positions[idx])
     p.stepSimulation()
